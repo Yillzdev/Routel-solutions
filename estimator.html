@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Solar System Estimator | Routel Solutions and Consults Ltd</title>
+  <meta name="description" content="Select the equipment you want to power and get an estimated inverter, battery and solar panel size.">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  <script>
+    (function () { try { var t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); document.documentElement.setAttribute('data-theme', t); } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); } })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="estimator">
+  <main>
+
+    <section class="page-head">
+      <div class="contact-blobs" aria-hidden="true">
+        <span class="cb cb1"></span>
+        <span class="cb cb3"></span>
+      </div>
+      <p class="eyebrow">Tools</p>
+      <h1 class="page-title">Solar system estimator</h1>
+      <p class="lead">Select the equipment you want to power to get an estimated inverter, battery and solar panel size.</p>
+    </section>
+
+    <section class="calc-section">
+      <div class="contact-blobs" aria-hidden="true">
+        <span class="cb cb1"></span>
+        <span class="cb cb2"></span>
+        <span class="cb cb3"></span>
+      </div>
+
+      <div class="calc-box" id="calcBox" data-reveal>
+        <div class="calc-left">
+          <span class="q-label">1. Select your equipment</span>
+          <div class="appliances" id="appList"></div>
+
+          <div class="calc-hours">
+            <span class="q-label">2. Backup duration</span>
+            <div class="range-row">
+              <input type="range" id="hoursRange" min="1" max="24" value="8" aria-label="Hours of power needed">
+              <output id="hoursOut">8 h</output>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-right">
+          <div class="calc-results empty" id="calcResults">
+            <div class="res">
+              <span class="res-label">Inverter</span>
+              <b><span class="num" id="invNum">—</span><em id="invUnit">kVA</em></b>
+              <small id="invNote"></small>
+            </div>
+            <div class="res">
+              <span class="res-label">Battery</span>
+              <b><span class="num" id="batNum">—</span><em id="batUnit">kWh</em></b>
+              <small id="batNote"></small>
+            </div>
+            <div class="res">
+              <span class="res-label">Solar panels</span>
+              <b><span class="num" id="panNum">—</span><em id="panUnit">panels</em></b>
+              <small id="panNote"></small>
+            </div>
+          </div>
+
+          <div class="meter">
+            <div class="meter-top"><span>Inverter loading</span><span id="meterText">—</span></div>
+            <div class="meter-bar"><div class="meter-fill" id="meterFill"></div></div>
+          </div>
+
+          <p class="calc-load" id="calcLoad">Select equipment to see your estimate.</p>
+
+          <button type="button" class="calc-cta" id="calcCta" disabled>Request a quote for this system</button>
+          <p class="calc-note">Indicative estimate only. The final system size is confirmed after a site assessment.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="shared.js"></script>
+  <script src="estimator.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Contact and Quote | Routel Solutions and Consults Ltd</title>
+  <meta name="description" content="Request a quote from Routel Solutions and Consults Ltd. Choose the services you need and send your request on WhatsApp or by email.">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  <script>
+    (function () { try { var t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); document.documentElement.setAttribute('data-theme', t); } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); } })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+  <main>
+
+    <section class="page-head">
+      <div class="contact-blobs" aria-hidden="true">
+        <span class="cb cb1"></span>
+        <span class="cb cb3"></span>
+      </div>
+      <p class="eyebrow">Contact</p>
+      <h1 class="page-title">Let's work together</h1>
+      <p class="lead">Tell us what you need and we'll get back to you.</p>
+    </section>
+
+    <!-- QUOTE BUILDER -->
+    <section class="contact">
+      <div class="contact-blobs" aria-hidden="true">
+        <span class="cb cb1"></span>
+        <span class="cb cb2"></span>
+        <span class="cb cb3"></span>
+      </div>
+
+      <div class="quote-box" id="quoteBox" data-reveal>
+
+        <div class="q-step">
+          <span class="q-label">1. Select services</span>
+          <div class="q-chips" data-group="services">
+            <button type="button" class="chip" data-value="Solar" aria-pressed="false"><svg><use href="#i-panel"/></svg>Solar</button>
+            <button type="button" class="chip" data-value="Networking &amp; Wi-Fi" aria-pressed="false"><svg><use href="#i-wifi"/></svg>Networking &amp; Wi-Fi</button>
+            <button type="button" class="chip" data-value="Surveillance" aria-pressed="false"><svg><use href="#i-camera"/></svg>Surveillance</button>
+            <button type="button" class="chip" data-value="Maintenance &amp; support" aria-pressed="false"><svg><use href="#i-wrench"/></svg>Maintenance &amp; support</button>
+          </div>
+        </div>
+
+        <div class="q-step">
+          <span class="q-label">2. Property type</span>
+          <div class="q-chips" data-group="place">
+            <button type="button" class="chip" data-value="Home" aria-pressed="false">Home</button>
+            <button type="button" class="chip" data-value="Office" aria-pressed="false">Office</button>
+            <button type="button" class="chip" data-value="Estate" aria-pressed="false">Estate</button>
+            <button type="button" class="chip" data-value="Remote site" aria-pressed="false">Remote site</button>
+          </div>
+        </div>
+
+        <div class="q-step">
+          <span class="q-label">3. Additional details <em>(optional)</em></span>
+          <div class="q-fields">
+            <input id="qName" type="text" placeholder="Your name" autocomplete="name" maxlength="60" aria-label="Your name">
+            <input id="qNote" type="text" placeholder="Anything else we should know?" maxlength="300" aria-label="Anything else we should know">
+          </div>
+        </div>
+
+        <div class="q-step">
+          <span class="q-label">Message preview</span>
+          <div class="q-preview">
+            <div class="bubble" id="qBubble">Hi Routel, I'd like to make an enquiry.</div>
+          </div>
+        </div>
+
+        <div class="contact-btns">
+          <!-- these two links are filled in by contact.js. your number and email are set at the top of shared.js -->
+          <a href="#" id="sendWa" class="btn btn-wa" target="_blank" rel="noopener">Continue on WhatsApp</a>
+          <a href="#" id="sendMail" class="btn">Send by email</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <h2>FAQ.</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false"><span>How do I get a quote?</span><i class="faq-icon" aria-hidden="true"></i></button>
+          <div class="faq-a"><div><p>Use the quote builder at the top of this page. Choose what you need and the type of place, then send it to us on WhatsApp or by email. We'll get back to you with the next steps.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false"><span>What size of solar system do I need?</span><i class="faq-icon" aria-hidden="true"></i></button>
+          <div class="faq-a"><div><p>It depends on what you run and for how long. Try the <a href="estimator.html">solar system estimator</a> for an approximate size. We confirm the final size with a load assessment before we install anything.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false"><span>Can you provide backup power for offices and server rooms?</span><i class="faq-icon" aria-hidden="true"></i></button>
+          <div class="faq-a"><div><p>Yes. We install backup power for offices and server rooms, with the inverters and batteries sized to the equipment that has to stay on.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false"><span>Can you connect buildings or remote sites?</span><i class="faq-icon" aria-hidden="true"></i></button>
+          <div class="faq-a"><div><p>Yes. We set up radio links between buildings and remote sites, along with Wi-Fi coverage, structured cabling and server racks.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false"><span>Can I watch my cameras on my phone?</span><i class="faq-icon" aria-hidden="true"></i></button>
+          <div class="faq-a"><div><p>Yes. When we set up your recorder, we also set up remote viewing so you can check your cameras on your phone and computer.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false"><span>Do you repair or upgrade systems you didn't install?</span><i class="faq-icon" aria-hidden="true"></i></button>
+          <div class="faq-a"><div><p>We do repairs and upgrades to existing camera systems, and fault finding and routine checks as part of our support. Tell us what you have in the quote builder and we'll let you know what we can do.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false"><span>Is the work labelled and tested?</span><i class="faq-icon" aria-hidden="true"></i></button>
+          <div class="faq-a"><div><p>Yes. We keep installations tidy and labelled, and test networking and cabling before handover.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false"><span>Do you support us after the installation?</span><i class="faq-icon" aria-hidden="true"></i></button>
+          <div class="faq-a"><div><p>Yes. We stay on after handover for fault finding, repairs, upgrades and routine checks, so small problems don't turn into major outages.</p></div></div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="shared.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
